@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:integration_testing/authentication/presentation/login.dart';
 import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -14,7 +15,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer(const Duration(seconds: 3), () async {});
+    _timer = Timer(const Duration(seconds: 5), () async {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (c) => const LoginScreen()));
+    });
   }
 
   @override
