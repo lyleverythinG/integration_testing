@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:integration_testing/authentication/presentation/register_screen.dart';
+import 'package:integration_testing/authentication/reusable/no_acc_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -14,6 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(title: const Text('Login Screen')),
         body: Container(
           height: MediaQuery.of(context).size.height,
           padding: const EdgeInsets.all(16),
@@ -33,8 +36,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: passwordCon,
                 decoration: const InputDecoration(hintText: 'Enter Password'),
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 20),
               ElevatedButton(onPressed: () {}, child: const Text('LOGIN')),
+              const Expanded(child: SizedBox()),
+              NoAccButton(
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (c) => const RegisterScreen()));
+                },
+              ),
             ],
           ),
         ),
