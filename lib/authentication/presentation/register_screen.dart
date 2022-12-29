@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:integration_testing/authentication/auth_bloc/auth_bloc.dart';
-import 'package:integration_testing/authentication/presentation/login_screen.dart';
-import 'package:integration_testing/authentication/reusable/loading.dart';
-import 'package:integration_testing/home/presentation/home.dart';
-import '../userdata_bloc/userdata_bloc.dart';
+import '../../common_packages/common_packages.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);

@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:integration_testing/authentication/presentation/register_screen.dart';
-import 'package:integration_testing/authentication/reusable/loading.dart';
-import 'package:integration_testing/authentication/reusable/no_acc_button.dart';
-import 'package:integration_testing/home/presentation/home.dart';
-import '../auth_bloc/auth_bloc.dart';
-import '../userdata_bloc/userdata_bloc.dart';
+import '../../common_packages/common_packages.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);

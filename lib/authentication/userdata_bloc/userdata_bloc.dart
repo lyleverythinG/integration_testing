@@ -1,10 +1,5 @@
-import 'dart:async';
-import 'package:bloc/bloc.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:equatable/equatable.dart';
+import '../../common_packages/common_packages.dart';
 import 'dart:developer' as developer;
-import 'package:integration_testing/authentication/model/user_model.dart';
-import '../repository/userdata_repo.dart';
 part 'userdata_event.dart';
 part 'userdata_state.dart';
 

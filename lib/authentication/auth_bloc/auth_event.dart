@@ -18,13 +18,6 @@ class LoginEvent extends AuthEvent {
   List<Object?> get props => [email, password];
 }
 
-class LoginError extends AuthEvent {
-  final String message;
-  const LoginError({required this.message});
-  @override
-  List<Object> get props => [message];
-}
-
 class LogoutEvent extends AuthEvent {
   const LogoutEvent();
   @override
@@ -72,9 +65,4 @@ class RegisterUserEvent extends AuthEvent {
         accountCreated,
         password,
       ];
-}
-
-class LoadHomeEvent extends AuthEvent {
-  @override
-  List<Object?> get props => [];
 }

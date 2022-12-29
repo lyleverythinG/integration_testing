@@ -1,11 +1,4 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:integration_testing/authentication/presentation/login_screen.dart';
-import 'package:integration_testing/authentication/repository/auth_repo.dart';
-import 'authentication/auth_bloc/auth_bloc.dart';
-import 'authentication/repository/userdata_repo.dart';
-import 'authentication/userdata_bloc/userdata_bloc.dart';
+import 'common_packages/common_packages.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

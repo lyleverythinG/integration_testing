@@ -1,11 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:integration_testing/authentication/presentation/login_screen.dart';
-import 'package:integration_testing/authentication/reusable/loading.dart';
-import 'package:integration_testing/home/presentation/home.dart';
 import 'dart:developer' as developer;
-import 'auth_bloc/auth_bloc.dart';
-import 'userdata_bloc/userdata_bloc.dart';
+import '../common_packages/common_packages.dart';
 
 class AuthenticationFlow extends StatefulWidget {
   const AuthenticationFlow({Key? key}) : super(key: key);

@@ -1,11 +1,5 @@
-import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
+import '../../common_packages/common_packages.dart';
 import 'dart:developer' as developer;
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:integration_testing/authentication/model/user_model.dart';
-import '../repository/auth_repo.dart';
 part 'auth_event.dart';
 part 'auth_state.dart';
 

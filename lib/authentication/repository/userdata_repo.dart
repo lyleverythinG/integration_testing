@@ -1,6 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import '../../constants/const.dart';
+import '../../common_packages/common_packages.dart';
 
 class UserDataRepo {
   final auth = FirebaseAuth.instance;
