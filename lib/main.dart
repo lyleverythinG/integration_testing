@@ -1,6 +1,9 @@
 import 'common_packages/common_packages.dart';
 
 Future<void> main() async {
+  //TODO: setup Firebase(Ex.Firebase,authentication-enable email & password, setup firestore database)
+  //TODO: android\app\build.gradle ERROR FIX: Changed GradleException() into -> FileNotFoundException()
+  //TODO: android\app\build.gradle - minSdkVersion - 21, targetSdkVersion - 30
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const IntegrationAppDemo());
