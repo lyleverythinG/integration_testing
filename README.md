@@ -11,27 +11,27 @@ Important Information:
 - tester.pump() - this method is to trigger a single frame for the test. Note: If multiple frames are needed(Ex.animations), use tester.pumpAndSettle() instead.
 
 - Packages Used:
-    cupertino_icons: ^1.0.2
-    firebase_core: ^1.10.0
-    firebase_auth: ^3.2.0
-    firebase_storage: ^10.1.0
-    cloud_firestore: ^3.0.0
-    flutter_bloc: ^8.0.1
-    provider: ^6.0.0
-    equatable: ^2.0.3
-    fluttertoast: ^8.0.9
+   - cupertino_icons: ^1.0.2
+   - firebase_core: ^1.10.0
+   - firebase_auth: ^3.2.0
+   - firebase_storage: ^10.1.0
+   - cloud_firestore: ^3.0.0
+   - flutter_bloc: ^8.0.1
+   - provider: ^6.0.0
+   - equatable: ^2.0.3
+   - fluttertoast: ^8.0.9
 - Packages Used for Testing:
-    integration_test:
-    flutter_test:
+   - integration_test:
+   - flutter_test:
 - After Firebase and project setup, DO THIS:
-    Run the app first and create an account
-    Once a user account is created, stop the app.
-    //Changed the email in integration_test/app_test.dart file into the email of the account you've created.
-    Example:
-    await tester.enterText(emailLoginField, 'testt@gmail.com');
-    //Changed the password in integration_test/app_test.dart file into the password of the account you've created.
-    Example:
-    await tester.enterText(passwordLoginField, '1234567!!');
+    - Run the app first and create an account
+    - Once a user account is created, stop the app.
+    - //Changed the email in integration_test/app_test.dart file into the email of the account you've created.
+    - Example:
+    - await tester.enterText(emailLoginField, 'testt@gmail.com');
+    - //Changed the password in integration_test/app_test.dart file into the password of the account you've created.
+    - Example:
+    - await tester.enterText(passwordLoginField, '1234567!!');
  
 
 # App Demo
